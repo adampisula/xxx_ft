@@ -1,0 +1,22 @@
+.news .title {
+    font-size: 24px;
+    font-weight: bolder;
+    position: absolute;
+    left: 35px;
+    top: 32px;
+}
+
+.news article {
+    width: 75%;
+    font-size: 22px;
+    position: absolute;
+    left: 58px;
+    top: 73px;
+}
+
+.news .author {
+    position: absolute;
+    right: 32px;
+    font-style: italic;
+    font-size: 22px;
+}

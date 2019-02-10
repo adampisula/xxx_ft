@@ -1,0 +1,11 @@
+.news {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    display: block;
+    width: calc(50% - 361px);
+    height: 540px;
+    background: #DFDFDF;
+    color: black;
+    font-family: 'Anonymous Pro', monospace;
+}

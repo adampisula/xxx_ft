@@ -1,0 +1,9 @@
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #1C1C1C;
+    z-index: 1;
+}

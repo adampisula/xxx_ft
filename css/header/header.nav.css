@@ -1,0 +1,25 @@
+header nav {
+    white-space: nowrap;
+    position: absolute;
+    top: 38px;
+    right: 54px;
+}
+
+header nav a {
+    display: inline-block;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+    margin: 0 0 0 22px;
+    text-decoration: none;
+}
+
+header nav a:after {
+    content: '';
+    width: calc(100% - 5px);
+    height: 1px;
+    display: block;
+    margin: 5px -1px 0 0;
+    background: #DFDFDF;
+    transition: all 0.1s ease-in-out;
+}

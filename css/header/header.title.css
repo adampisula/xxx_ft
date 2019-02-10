@@ -1,0 +1,15 @@
+header .title {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 21px;
+    color: white;
+    display: block;
+    position: absolute;
+    left: 148px;
+    top: 28px;
+    font-weight: normal;
+    margin: 0;
+}
+
+header .title span {
+    letter-spacing: 2px;
+}
