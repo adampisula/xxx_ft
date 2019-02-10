@@ -53,28 +53,7 @@
         </section>
         <section class="programme">
             <p class="title">Repertuar na <span class="date"></span>:</p>
-            <ul>
-                <li>
-                    12:00 - Spektakl 1<br>
-                    <span class="author">(Imię Nazwisko)</span>
-                </li>
-                <li>
-                    13:00 - Spektakl 2<br>
-                    <span class="author">(Imię Nazwisko)</span>
-                </li>
-                <li>
-                    14:00 - Spektakl 3<br>
-                    <span class="author">(Imię Nazwisko)</span>
-                </li>
-                <li>
-                    15:00 - Spektakl 4<br>
-                    <span class="author">(Imię Nazwisko)</span>
-                </li>
-                <li>
-                    16:00 - Spektakl 5<br>
-                    <span class="author">(Imię Nazwisko)</span>
-                </li>
-            </ul>
+            <ul></ul>
         </section>
         <section class="news">
             <img src="<?php echo get_template_directory_uri(); ?>/img/zawijas.svg" class="curl">
@@ -87,6 +66,17 @@
         <!--JS-->
         <script src="<?php echo get_template_directory_uri(); ?>/js/header.nav.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/programme.js"></script>
+        <!--JS - PROGRAMME-->
+        <script>
+            var programme = JSON.parse('<?php echo str_replace("\n", "", file_get_contents(get_template_directory_uri().'/programme.json')); ?>');
+            var today_programme = programme[('0' + now.getDate()).slice(-2) + '_' + ('0' + (now.getMonth() + 1)).slice(-2)];
+
+            console.log(today_programme);
+
+            for(var i = 0; i < today_programme.length; i++)
+                $('.programme ul').append('<li>' + today_programme[i]['time'] + ' - ' + today_programme[i]['title'] + '<br><span class="author">' + today_programme[i]['author'] + '</span></li>');
+        </script>
+        <!--JS - NEWS-->
         <script>
             var recent_posts = JSON.parse('<?php echo json_encode($recent_posts); ?>');
 
