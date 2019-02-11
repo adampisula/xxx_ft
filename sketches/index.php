@@ -71,27 +71,29 @@
             var programme = JSON.parse('<?php echo str_replace("\n", "", file_get_contents(get_template_directory_uri().'/programme.json')); ?>');
             var today_programme = programme[('0' + now.getDate()).slice(-2) + '_' + ('0' + (now.getMonth() + 1)).slice(-2)];
 
-            if(today_programme == undefined)
-                $('.programme ul').append('<li>Niestety dzisiaj nie odbywają się żadne spektakle.</li>');
+            console.log(today_programme);
 
-            else {
-                for(var i = 0; i < today_programme.length; i++)
-                    $('.programme ul').append('<li>' + today_programme[i]['time'] + ' - ' + today_programme[i]['title'] + '<br><span class="author">' + today_programme[i]['author'] + '</span></li>');
-            }
+            for(var i = 0; i < today_programme.length; i++)
+                $('.programme ul').append('<li>' + today_programme[i]['time'] + ' - ' + today_programme[i]['title'] + '<br><span class="author">' + today_programme[i]['author'] + '</span></li>');
         </script>
         <!--JS - NEWS-->
         <script>
             var recent_posts = JSON.parse('<?php echo json_encode($recent_posts); ?>');
 
-            function showPost(postnumber) {
+            for(var i = 0; i < recent_posts.length; i++)
+                $('.news .dots').append('<div class="dot" name="post-' + i + '"></div>');
+
+            $('.news .dots .dot').on('click', function() {
+                var post = recent_posts[$(this).attr('name').split('post-')[1]];
+
                 $('.news article').fadeOut(150);
                 $('.news .author').fadeOut(150);
 
                 setTimeout(function() {
-                    $('.news article').text(recent_posts[postnumber]['post_content']);
+                    $('.news article').text(post['post_content']);
                     $('.news article').fadeIn(150);
 
-                    $('.news .author').text(recent_posts[postnumber]['author']);
+                    $('.news .author').text(post['author']);
                     $('.news .author').fadeIn(150);
 
                     while($('.news article').height() >= 343) {
@@ -108,34 +110,24 @@
                     $(this).removeClass('active');
                 });
 
-                $('.news .dots .dot').eq(postnumber).addClass('active');
-            }
-
-            var iPosts = 1;
-
-            function intervalFunction() {
-                iPosts %= recent_posts.length;
-
-                showPost(iPosts);
-
-                iPosts++;
-            }
-
-            for(var i = 0; i < recent_posts.length; i++)
-                $('.news .dots').append('<div class="dot" name="post-' + i + '"></div>');
-
-            var interval;
-            interval = setInterval(intervalFunction, 7500);
-
-            $('.news .dots .dot').on('click', function() {
-                clearInterval(interval);
-                interval = setInterval(intervalFunction, 7500);
-
-                showPost($(this).attr('name').split('post-')[1]);
+                $(this).addClass('active');
             });
 
-            if(recent_posts.length > 0)
-                showPost(0);
+            if(recent_posts.length > 0) {
+                $('.news article').text(recent_posts[0]['post_content']);
+                $('.news .author').text(recent_posts[0]['author']);
+
+                $('.news .dots .dot').eq(0).addClass('active');
+
+                while($('.news article').height() >= 343) {
+                    var words = $('.news article').text().split(' ');
+                    words.pop();
+
+                    $('.news article').text(Array.prototype.join.call(words, ' ') + '...');
+                }
+
+                $('.news .author').css('top', 73 + $('.news article').height() + 18 + 'px');
+            }
         </script>
     </body>
 </html>

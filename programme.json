@@ -9,6 +9,21 @@
             "time": "11:00",
             "title": "Spektakl 2",
             "author": "Imię Nazwisko"
+        },
+        {
+            "time": "12:00",
+            "title": "Spektakl 3",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "13:00",
+            "title": "Spektakl 4",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "14:00",
+            "title": "Spektakl 5",
+            "author": "Imię Nazwisko"
         }
     ],
     "12_02": [
