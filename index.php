@@ -79,20 +79,64 @@
         <section class="news">
             <img src="<?php echo get_template_directory_uri(); ?>/img/zawijas.svg" class="curl">
             <p class="title">Co nowego...</p>
-            <article>Początek traktatu czasu być miały z mądrych przyczyn nie czyni, ale to pytanie; Czemuż Dobro jest zewnątrz święta czyli godności stania się być może, ani mniej się przygody na. świat są w przekładzie tym ciemne miejsca i gdyby niebyło najwyższego dobra, a wyraz rum zamiast przestrzeń. aaaaa aaaaaaa aaaaaaa aaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaa a aaaaaaa</article>
-            <p class="author">Imię Nazwisko</p>
+            <article></article>
+            <p class="author"></p>
             <div class="dots"></div>
         </section>
 
         <!--JS-->
         <script src="<?php echo get_template_directory_uri(); ?>/js/header.nav.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/programme.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/js/news.content.js"></script>
         <script>
             var recent_posts = JSON.parse('<?php echo json_encode($recent_posts); ?>');
 
-            for(var i = 0; i < recent_posts.length; i++) {
-                $('.news .dots').append('<div class="dot"></div>');
+            for(var i = 0; i < recent_posts.length; i++)
+                $('.news .dots').append('<div class="dot" name="post-' + i + '"></div>');
+
+            $('.news .dots .dot').on('click', function() {
+                var post = recent_posts[$(this).attr('name').split('post-')[1]];
+
+                $('.news article').fadeOut(150);
+                $('.news .author').fadeOut(150);
+
+                setTimeout(function() {
+                    $('.news article').text(post['post_content']);
+                    $('.news article').fadeIn(150);
+
+                    $('.news .author').text(post['author']);
+                    $('.news .author').fadeIn(150);
+
+                    while($('.news article').height() >= 343) {
+                        var words = $('.news article').text().split(' ');
+                        words.pop();
+
+                        $('.news article').text(Array.prototype.join.call(words, ' ') + '...');
+                    }
+
+                    $('.news .author').css('top', 73 + $('.news article').height() + 18 + 'px');
+                }, 150);
+
+                $('.news .dots .dot').each(function() {
+                    $(this).removeClass('active');
+                });
+
+                $(this).addClass('active');
+            });
+
+            if(recent_posts.length > 0) {
+                $('.news article').text(recent_posts[0]['post_content']);
+                $('.news .author').text(recent_posts[0]['author']);
+
+                $('.news .dots .dot').eq(0).addClass('active');
+
+                while($('.news article').height() >= 343) {
+                    var words = $('.news article').text().split(' ');
+                    words.pop();
+
+                    $('.news article').text(Array.prototype.join.call(words, ' ') + '...');
+                }
+
+                $('.news .author').css('top', 73 + $('.news article').height() + 18 + 'px');
             }
         </script>
     </body>

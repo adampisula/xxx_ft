@@ -1,4 +1,3 @@
-//343px
 while($('.news article').height() >= 343) {
     var words = $('.news article').text().split(' ');
     words.pop();
