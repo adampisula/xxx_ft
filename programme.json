@@ -1,0 +1,26 @@
+{
+    "11_02": [
+        {
+            "time": "10:00",
+            "title": "Spektakl 1",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "11:00",
+            "title": "Spektakl 2",
+            "author": "Imię Nazwisko"
+        }
+    ],
+    "12_02": [
+        {
+            "time": "10:00",
+            "title": "Spektakl 3",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "11:00",
+            "title": "Spektakl 4",
+            "author": "Imię Nazwisko"
+        }
+    ]
+}
