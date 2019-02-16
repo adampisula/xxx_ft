@@ -1,0 +1,8 @@
+.gallery {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: block;
+    width: 50%;
+    height: 540px;
+}

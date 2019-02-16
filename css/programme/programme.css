@@ -1,11 +1,14 @@
 .programme {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    display: block;
-    width: 361px;
+    position: relative;
+    top: 104px;
+    display: inline-block;
+    margin: -4px 0 0 0;
     height: 540px;
     background: #DFDFDF;
     color: black;
     font-family: 'Anonymous Pro', monospace;
+}
+
+.programme:nth-of-type(even) {
+    background: #CACACA;
 }

@@ -1,0 +1,23 @@
+.gallery .dots {
+    display: block;
+    position: absolute;
+    right: 28px;
+    bottom: 22px;
+    z-index: 1;
+}
+
+.gallery .dots .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 7px 0 7px;
+    background: white;
+    opacity: 0.25;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+
+.gallery .dots .dot.active {
+    opacity: 0.65;
+}

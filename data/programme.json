@@ -1,0 +1,105 @@
+{
+    "11_02": [
+        {
+            "time": "10:00",
+            "title": "Spektakl 1",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "11:00",
+            "title": "Spektakl 2",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "12:00",
+            "title": "Spektakl 3",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "13:00",
+            "title": "Spektakl 4",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "14:00",
+            "title": "Spektakl 5",
+            "author": "Imię Nazwisko"
+        }
+    ],
+    "12_02": [
+        {
+            "time": "10:00",
+            "title": "Spektakl 3",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "11:00",
+            "title": "Spektakl 4",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "13:00",
+            "title": "Spektakl 4",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "14:00",
+            "title": "asdasda 5",
+            "author": "Imię Nazwisko"
+        }
+    ],
+    "13_02": [
+        {
+            "time": "10:00",
+            "title": "blblbl 1",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "11:00",
+            "title": "adadasd 2",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "12:00",
+            "title": "Spekweakl 3",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "13:00",
+            "title": "qweqwe 4",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "14:00",
+            "title": "gsdgsdfsd 5",
+            "author": "Imię Nazwisko"
+        }
+    ],
+    "14_02": [
+        {
+            "time": "10:00",
+            "title": "blblbl 1",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "11:00",
+            "title": "adadasd 2",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "12:00",
+            "title": "Spektakl 3",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "13:00",
+            "title": "qweqwe 4",
+            "author": "Imię Nazwisko"
+        },
+        {
+            "time": "14:00",
+            "title": "gsdgsdfsd 5",
+            "author": "Imię Nazwisko"
+        }
+    ]
+}
