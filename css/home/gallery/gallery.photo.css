@@ -5,8 +5,5 @@
     background-position: center;
     background-size: cover;
     display: none;
-}
-
-.gallery .photo:first-of-type {
-    display: block;
+    position: absolute;
 }
