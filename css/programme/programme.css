@@ -6,9 +6,11 @@
     height: 540px;
     background: #DFDFDF;
     color: black;
+    border-top: 2px solid #CACACA;
     font-family: 'Anonymous Pro', monospace;
 }
 
 .programme:nth-of-type(even) {
     background: #CACACA;
+    border-top: 2px solid #DFDFDF;
 }

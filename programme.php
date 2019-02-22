@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>XXX Festiwal Teatralny</title>
 
         <!--CSS-->
@@ -12,15 +13,24 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header/header.nav.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header/header.logo.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header/header.title.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header/header.hamburger.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/programme/programme.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/programme/programme.content.css" />
+
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/header/header.logo.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/header/header.nav.css" />
 
         <!--JS-->
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
     </head>
     <body>
         <header>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="XXX FT" class="logo">
+            <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="XXX FT" class="logo"></a>
+            <!--<h1 class="title">
+                <span>XXX</span> Festiwal<br>
+                Teatralny
+            </h1>-->
+            <div class="hamburger"><span></span><span></span><span></span></div>
             <nav>
                 <a href="<?php echo get_home_url(); ?>" data-anchor="/ strona główna /" >/ sg /</a>
                 <a href="#" data-anchor="/ forum /">/ fo /</a>

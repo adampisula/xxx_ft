@@ -1,0 +1,13 @@
+@media screen and (max-width: 1200px) {
+    .programme {
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .programme {
+        width: 100%;
+    }
+}

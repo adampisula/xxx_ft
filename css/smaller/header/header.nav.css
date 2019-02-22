@@ -1,0 +1,45 @@
+@media screen and (max-width: 1000px) {
+    header .hamburger {
+        display: block;
+        z-index: 2;
+    }
+
+    header nav {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background: #1C1C1C;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    header nav a {
+        display: table;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    header nav a:first-child {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-height: 360px) and (max-width: 1000px) {
+    header nav {
+        white-space: initial;
+        text-align: center;
+    }
+
+    header nav a {
+        display: inline-block;
+        margin: 50px 15px 0 15px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header nav {
+        display: block !important;
+    }
+}

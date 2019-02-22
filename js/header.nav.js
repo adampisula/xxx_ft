@@ -4,3 +4,8 @@ $('header nav a').hover(function() {
     $(this).attr('data-anchor', $(this).text());
     $(this).text(text);
 });
+
+$('header .hamburger').on('click', function() {
+    $(this).toggleClass('active');
+    $('header nav').fadeToggle();
+});

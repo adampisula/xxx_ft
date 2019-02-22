@@ -30,8 +30,6 @@ function intervalFunctionPhotos() {
     showPhoto(iPhotos);
 
     iPhotos++;
-
-    console.log('Photo: ' + iPhotos);
 }
 
 var intervalPhotos;

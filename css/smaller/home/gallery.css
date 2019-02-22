@@ -1,0 +1,24 @@
+@media screen and (max-width: 1200px) {
+    .gallery {
+        position: absolute;
+        top: 640px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .gallery {
+        top: 1180px;
+    }
+
+    .gallery .photo .caption p {
+        font-size: 16px;
+        left: 20px;
+    }
+
+    .gallery .photo .caption .title {
+        font-size: 20px;
+        left: 20px;
+    }
+}
