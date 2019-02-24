@@ -56,7 +56,7 @@
                 <a href="<?php echo get_home_url(); ?>" data-anchor="/ strona główna /" >/ sg /</a>
                 <a href="#" data-anchor="/ forum /">/ fo /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/programme/" data-anchor="/ harmonogram /">/ ha /</a>
-                <a href="#" data-anchor="/ o festiwalu /">/ of /</a>
+                <a href="<?php echo get_home_url(); ?>/index.php/o-festiwalu/" data-anchor="/ o festiwalu /">/ of /</a>
                 <a href="#" data-anchor="/ sponsorzy /">/ sp /</a>
                 <a href="#" data-anchor="/ kontakt /">/ ko /</a>
             </nav>

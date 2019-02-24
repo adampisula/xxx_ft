@@ -1,0 +1,12 @@
+.container {
+    background: #DFDFDF;
+    color: black;
+    font-family: 'Anonymous Pro', monospace;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 65%;
+}
