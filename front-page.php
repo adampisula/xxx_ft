@@ -54,11 +54,11 @@
             <div class="hamburger"><span></span><span></span><span></span></div>
             <nav>
                 <a href="<?php echo get_home_url(); ?>" data-anchor="/ strona główna /" >/ sg /</a>
-                <a href="#" data-anchor="/ forum /">/ fo /</a>
+                <a href="<?php echo get_home_url(); ?>/index.php/forum/" data-anchor="/ forum /">/ fo /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/programme/" data-anchor="/ harmonogram /">/ ha /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/o-festiwalu/" data-anchor="/ o festiwalu /">/ of /</a>
-                <a href="#" data-anchor="/ sponsorzy /">/ sp /</a>
-                <a href="#" data-anchor="/ kontakt /">/ ko /</a>
+                <a href="<?php echo get_home_url(); ?>/index.php/sponsorzy/" data-anchor="/ sponsorzy /">/ sp /</a>
+                <a href="<?php echo get_home_url(); ?>/index.php/kontakt/" data-anchor="/ kontakt /">/ ko /</a>
             </nav>
         </header>
         <section class="gallery">
