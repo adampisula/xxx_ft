@@ -1,4 +1,4 @@
-<?php /* Template Name: Programme */ ?>
+<?php /* Template Name: News */ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,11 +14,13 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header/header.logo.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header/header.title.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header/header.hamburger.css" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/programme/programme.css" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/programme/programme.content.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/index/container.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/index/container.content.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/news/news.post.css" />
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/header/header.logo.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/header/header.nav.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/index/container.css" />
 
         <!--JS-->
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
@@ -40,31 +42,26 @@
                 <a href="<?php echo get_home_url(); ?>/index.php/kontakt/" data-anchor="/ kontakt /">/ ko /</a>
             </nav>
         </header>
+        <div class="container">
+        <h1 class="title"><?php the_title(); ?></h1>
+        <?php
+            $args = array(
+                'post_type' => 'post'
+            );
 
-        <!--JS-->
-        <!--JS - PROGRAMME-->
-        <script>
-            var programme = JSON.parse('<?php echo str_replace("\n", "", file_get_contents(get_template_directory_uri().'/data/programme.json')); ?>');
-            var index = 0;
-
-            for(var key in programme) {
-                var day = new Date(2019, key.split('_')[1] - 1, key.split('_')[0] - 0 + 1);
-                var day_prog = programme[key];
-                var day_oftw = ['niedzielę', 'poniedziałek', 'wtorek', 'środę', 'czwartek', 'piątek', 'sobotę'];
-
-                var html = '<section class="programme" name="programme-' + index + '"><p class="title">Repertuar na <span class="date">' + day_oftw[day.getDay()] + ', ' + ('0' + day.getDate()).slice(-2) + '.' + ('0' + (day.getMonth() + 1)).slice(-2) + '</span>:</p><ul>'
-
-                for(var i = 0; i < day_prog.length; i++)
-                    html += '<li>' + day_prog[i]['time'] + ' - ' + day_prog[i]['title'] + '<br><span class="author">' + day_prog[i]['author'] + '</span></li>';
-
-                html += '</ul></section>';
-
-                $('body').append(html);
-
-                index++;
+            $post_query = new WP_Query($args);
+            
+            if($post_query->have_posts() ) {
+                while($post_query->have_posts() ) {
+                    $post_query->the_post(); ?>
+                        <div class="post">
+                            <a href="<?php the_permalink(); ?>"><h2 class="title"><b><?php the_title(); ?></b> - <i><?php echo get_the_author_meta('first_name').' '.get_the_author_meta('last_name'); ?></i></h2></a>
+                            <p><?php the_content(); ?></p>
+                        </div>
+                <?php }
             }
-        </script>
+        ?>
+        </div>
         <script src="<?php echo get_template_directory_uri(); ?>/js/header.nav.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/js/programme/programme.js"></script>
     </body>
 </html>

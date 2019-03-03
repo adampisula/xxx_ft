@@ -33,7 +33,7 @@
             <div class="hamburger"><span></span><span></span><span></span></div>
             <nav>
                 <a href="<?php echo get_home_url(); ?>" data-anchor="/ strona główna /" >/ sg /</a>
-                <a href="<?php echo get_home_url(); ?>/index.php/forum/" data-anchor="/ forum /">/ fo /</a>
+                <a href="<?php echo get_home_url(); ?>/index.php/aktualnosci/" data-anchor="/ aktualności /">/ ak /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/programme/" data-anchor="/ harmonogram /">/ ha /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/o-festiwalu/" data-anchor="/ o festiwalu /">/ of /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/sponsorzy/" data-anchor="/ sponsorzy /">/ sp /</a>
@@ -42,7 +42,7 @@
         </header>
         <div class="container">
             <h1 class="title"><?php the_title(); ?></h1>
-            <?php echo get_post()->post_content; ?>
+            <p><?php echo get_post()->post_content; ?></p>
         </div>
         <script src="<?php echo get_template_directory_uri(); ?>/js/header.nav.js"></script>
     </body>

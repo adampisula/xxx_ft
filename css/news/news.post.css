@@ -1,0 +1,13 @@
+.post {
+    display: block;
+    margin: 0 20px;
+}
+
+.post .title {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.post a {
+    color: black;
+}
