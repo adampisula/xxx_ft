@@ -63,22 +63,10 @@
         </header>
         <section class="gallery">
             <div class="photo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/uploads/1.jpg');">
-                <div class="caption">
-                    <p class="title">Fajnie bawimy się na Festiwalu...</p>
-                    <p>A Ty nadal w piwnicy?</p>
-                </div>
             </div>
             <div class="photo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/uploads/2.jpg');">
-                <div class="caption">
-                    <p class="title">Robimy jakieś pierdoły</p>
-                    <p>Bo to festiwal teatralny</p>
-                </div>
             </div>
             <div class="photo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/uploads/3.jpg');">
-                <div class="caption">
-                    <p class="title">I więcej pierdół...</p>
-                    <p>Ha ha!</p>
-                </div>
             </div>
             <div class="dots"></div>
         </section>
