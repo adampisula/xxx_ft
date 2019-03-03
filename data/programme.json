@@ -1,105 +1,218 @@
 {
-    "11_02": [
+    "13_03": [
         {
             "time": "10:00",
-            "title": "Spektakl 1",
-            "author": "Imię Nazwisko"
+            "title": "Hotel Andromeda",
+            "author": "Michał Losa, Mateusz Janas",
+            "place": "Aula"
         },
         {
-            "time": "11:00",
-            "title": "Spektakl 2",
-            "author": "Imię Nazwisko"
+            "time": "11:30",
+            "title": "Lato",
+            "author": "Magda Grajdek",
+            "place": "Mała Scena"
         },
         {
-            "time": "12:00",
-            "title": "Spektakl 3",
-            "author": "Imię Nazwisko"
+            "time": "12:45",
+            "title": "Kunstkamera",
+            "author": "Jagoda Szpularz, Michał Bawełek",
+            "place": "Aula - debiut klasy 1A"
         },
         {
-            "time": "13:00",
-            "title": "Spektakl 4",
-            "author": "Imię Nazwisko"
+            "time": "14:30",
+            "title": "Epilog",
+            "author": "Wiktoria Januszko, Michał Bawełek",
+            "place": "Mała Scena"
         },
         {
-            "time": "14:00",
-            "title": "Spektakl 5",
-            "author": "Imię Nazwisko"
+            "time": "15:45",
+            "title": "Agapi",
+            "author": "Miłosz Sadowski",
+            "place": "Aula"
+        },
+        {
+            "time": "17:00",
+            "title": "Perfekt pikczer",
+            "author": "Kamil Baryła",
+            "place": "Mała Scena - spektakl gościnny"
         }
     ],
-    "12_02": [
+    "14_03": [
         {
             "time": "10:00",
-            "title": "Spektakl 3",
-            "author": "Imię Nazwisko"
+            "title": "Krazy In Love",
+            "author": "Natalia Szczygioł",
+            "place": "Aula"
         },
         {
             "time": "11:00",
-            "title": "Spektakl 4",
-            "author": "Imię Nazwisko"
+            "title": "Narodziny Wenus",
+            "author": "Wiktoria Jaworska, Weronika Kowalczyk",
+            "place": "Mała Scena"
         },
         {
-            "time": "13:00",
-            "title": "Spektakl 4",
-            "author": "Imię Nazwisko"
+            "time": "12:15",
+            "title": "Quid pro quo",
+            "author": "Daria Szentak, Monika Garwol",
+            "place": "Aula - debiut klasy 1B"
         },
         {
             "time": "14:00",
-            "title": "asdasda 5",
-            "author": "Imię Nazwisko"
+            "title": "Madame Chic",
+            "author": "Alicja Kałuża, Laura Wolny",
+            "place": "Mała Scena"
+        },
+        {
+            "time": "15:00",
+            "title": "zło[to]",
+            "author": "Martyna Czerwik, Wojciech Rybicki",
+            "place": "Aula"
+        },
+        {
+            "time": "16:00",
+            "title": "Red Carpet",
+            "author": "Maciej Dziaczko",
+            "place": "Mała Scena - pokaz specjalny"
         }
     ],
-    "13_02": [
+    "15_03": [
         {
-            "time": "10:00",
-            "title": "blblbl 1",
-            "author": "Imię Nazwisko"
+            "time": "16:00",
+            "title": "ja.narcyz",
+            "author": "Wojciech Rybicki",
+            "place": "Mała Scena"
         },
         {
-            "time": "11:00",
-            "title": "adadasd 2",
-            "author": "Imię Nazwisko"
+            "time": "17:00",
+            "title": "Sztuka jest sztuka",
+            "author": "Aleksander Kempski",
+            "place": "Aula"
         },
         {
-            "time": "12:00",
-            "title": "Spekweakl 3",
-            "author": "Imię Nazwisko"
+            "time": "18:00",
+            "title": "Superowa rakieta",
+            "author": "S.A.D.",
+            "place": "Mała Scena - spektakl absolwencki"
         },
         {
-            "time": "13:00",
-            "title": "qweqwe 4",
-            "author": "Imię Nazwisko"
-        },
-        {
-            "time": "14:00",
-            "title": "gsdgsdfsd 5",
-            "author": "Imię Nazwisko"
+            "time": "19:00",
+            "title": "Zespół Sztywnego Człowieka",
+            "author": "Marta Stopińska",
+            "place": "Aula"
         }
     ],
-    "14_02": [
-        {
-            "time": "10:00",
-            "title": "blblbl 1",
-            "author": "Imię Nazwisko"
-        },
-        {
-            "time": "11:00",
-            "title": "adadasd 2",
-            "author": "Imię Nazwisko"
-        },
+    "18_03": [
         {
             "time": "12:00",
-            "title": "Spektakl 3",
-            "author": "Imię Nazwisko"
+            "title": "Koncert muzyki elektronicznej",
+            "author": "Maciej Szczędzina",
+            "place": "Aula - pokaz specjalny"
         },
         {
             "time": "13:00",
-            "title": "qweqwe 4",
-            "author": "Imię Nazwisko"
+            "title": "nic.",
+            "author": "Kacper Malinowski, Magdalena Licznar",
+            "place": "Mała Scena"
+        },
+        {
+            "time": "14:15",
+            "title": "Upiór w Batorym",
+            "author": "Maciej Wawrzynek",
+            "place": "Aula - debiut klasy 1D"
+        },
+        {
+            "time": "15:30",
+            "title": "Przepraszam, ale to musi być pomyłka",
+            "author": "Kasia Honorowicz, Natalia Zwierzyńska",
+            "place": "Mała Scena"
+        },
+        {
+            "time": "16:30",
+            "title": "Shend",
+            "author": "Tomek Stefański",
+            "place": "Aula"
+        },
+        {
+            "time": "18:00",
+            "title": "Pierwsza Miłość",
+            "author": "Damian Kierek",
+            "place": "Mała Scena - spektakl gościnny"
+        }
+    ],
+    "19_03": [
+        {
+            "time": "12:00",
+            "title": "Królowa Lodu",
+            "author": "OREW",
+            "place": "Aula - spektakl gościnny"
+        },
+        {
+            "time": "13:00",
+            "title": "Upupa Epops",
+            "author": "Karol Latos",
+            "place": "Mała Scena - spektakl absolwencki"
         },
         {
             "time": "14:00",
-            "title": "gsdgsdfsd 5",
-            "author": "Imię Nazwisko"
+            "title": "Po drugiej stronie baśni",
+            "author": "Łukasz Jaromin, Jagoda Sumera, Weronika Żak",
+            "place": "Aula - debiut klasy 1E"
+        },
+        {
+            "time": "15:30",
+            "title": "Wesołooka",
+            "author": "Magdalena Licznar",
+            "place": "Mała Scena"
+        },
+        {
+            "time": "16:30",
+            "title": "Sklep",
+            "author": "Wiktoria Szewczyk",
+            "place": "Aula"
+        },
+        {
+            "time": "17:15",
+            "title": "Premiera",
+            "author": "Kasper Kilarski",
+            "place": "Mała Scena - spektakl absolwencki"
+        }
+    ],
+    "20_03": [
+        {
+            "time": "12:00",
+            "title": "Monodram na tszy",
+            "author": "Ola Radkowska, Olga Scholz, Mikołaj Garczyński",
+            "place": "Mała Scena"
+        },
+        {
+            "time": "13:15",
+            "title": "Bajka bez dna",
+            "author": "Judyta Dziereń",
+            "place": "Aula - debiut klasy 1C"
+        },
+        {
+            "time": "14:15",
+            "title": "4-HO-MET",
+            "author": "Magdalena Zbączyniak",
+            "place": "Mała Scena"
+        },
+        {
+            "time": "15:30",
+            "title": "rubrum",
+            "author": "Krzyś Piechniczek",
+            "place": "Aula - spektakl absolwencki"
+        },
+        {
+            "time": "16:15",
+            "title": "Przymus",
+            "author": "Dawid Zimoląg",
+            "place": "Mała Scena"
+        },
+        {
+            "time": "17:30",
+            "title": "&quot;The Room&quot; - Live Action",
+            "author": "Mateusz Janas, Michał Losa",
+            "place": "Aula"
         }
     ]
 }

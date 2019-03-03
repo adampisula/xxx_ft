@@ -8,14 +8,14 @@
 
 .programme ul {
     position: absolute;
-    left: 58px;
+    left: 46px;
     top: 72px;
 }
 
 .programme ul li {
     list-style-type: none;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .programme ul li:before {
@@ -24,4 +24,13 @@
 
 .programme ul li .author {
     margin-left: 36px;
+}
+
+.programme ul li .place {
+    margin-left: 36px;
+    font-style: italic;
+}
+
+.programme ul li .titleP {
+    font-weight: bolder;
 }

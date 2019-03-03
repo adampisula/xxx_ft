@@ -48,14 +48,14 @@
             var index = 0;
 
             for(var key in programme) {
-                var day = new Date(2019, key.split('_')[1] - 1, key.split('_')[0] - 0 + 1);
+                var day = new Date(2019, key.split('_')[1] - 1, key.split('_')[0] - 0);
                 var day_prog = programme[key];
                 var day_oftw = ['niedzielę', 'poniedziałek', 'wtorek', 'środę', 'czwartek', 'piątek', 'sobotę'];
 
                 var html = '<section class="programme" name="programme-' + index + '"><p class="title">Repertuar na <span class="date">' + day_oftw[day.getDay()] + ', ' + ('0' + day.getDate()).slice(-2) + '.' + ('0' + (day.getMonth() + 1)).slice(-2) + '</span>:</p><ul>'
 
                 for(var i = 0; i < day_prog.length; i++)
-                    html += '<li>' + day_prog[i]['time'] + ' - ' + day_prog[i]['title'] + '<br><span class="author">' + day_prog[i]['author'] + '</span></li>';
+                    html += '<li>' + day_prog[i]['time'] + ' - <span class="titleP">' + day_prog[i]['title'] + '</span><br><span class="author">reż. ' + day_prog[i]['author'] + '</span>' + '<br><span class="place">' + day_prog[i]['place'] + '</span></li>';
 
                 html += '</ul></section>';
 
