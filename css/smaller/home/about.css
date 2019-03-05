@@ -1,0 +1,14 @@
+@media screen and (max-width: 1200px) {
+    .about {
+        position: absolute;
+        top: 1180px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .about {
+        top: 1720px;
+    }
+}

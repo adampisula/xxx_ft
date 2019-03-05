@@ -1,0 +1,11 @@
+.about {
+    position: absolute;
+    left: 0;
+    top: 640px;
+    display: block;
+    width: 50%;
+    height: auto;
+    background: #DFDFDF;
+    color: black;
+    font-family: 'Anonymous Pro', monospace;
+}

@@ -1,0 +1,10 @@
+.about .title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 32px 0 0 35px;
+}
+
+.about article {
+    font-size: 22px;
+    margin: 14px 58px 35px 58px;
+}

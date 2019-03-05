@@ -35,10 +35,13 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home/gallery/gallery.photo.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home/gallery/gallery.caption.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home/gallery/gallery.dots.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home/about/about.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home/about/about.content.css" />
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/home/gallery.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/home/news.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/home/programme.css" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/home/about.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/header/header.logo.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/smaller/header/header.nav.css" />
 
@@ -82,6 +85,10 @@
             <p class="author"></p>
             <div class="dots"></div>
         </section>
+        <section class="about">
+            <p class="title">O Festiwalu...</p>
+            <article><p>Festiwal Teatralny III LO im. Stefana Batorego w Chorzowie to wieloletnia szkolna tradycja zapoczątkowana w 1989 roku z inicjatywy nauczycielskiej. Od początku jego głównym celem było umożliwienie uczniom zaistnienia na scenie i tę rolę spełnia aż do teraz.<br>Dzisiaj — w całości organizowany przez uczniów, a wyczekiwany okrągły rok — poprzez dekoracje i atmosferę na kilka wiosenny dni odmienia mury liceum w (jeszcze bardziej) pełne artystycznej energii i pasji.</p></article>
+        </section>
 
         <!--JS-->
         <script src="<?php echo get_template_directory_uri(); ?>/js/header.nav.js"></script>
@@ -102,8 +109,6 @@
         </script>
         <!--JS - NEWS-->
         <script>
-        console.log('<?php echo json_encode($recent_posts); ?>');
-
             var recent_posts = JSON.parse('<?php echo json_encode($recent_posts); ?>');
 
             function showPost(postnumber) {
