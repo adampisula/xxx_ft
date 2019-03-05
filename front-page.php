@@ -4,6 +4,7 @@
 
     for($i = 0; $i < count($recent_posts); $i++) {
         $recent_posts[$i]['post_content'] = ltrim($recent_posts[$i]['post_content']);
+        $recent_posts[$i]['post_content'] = str_replace("\"", "\\\"", $recent_posts[$i]['post_content']);
         $recent_posts[$i]['post_content'] = str_replace("\n", "<br>", $recent_posts[$i]['post_content']);
         $recent_posts[$i]['author'] = get_the_author_meta('first_name', $recent_posts[$i]['post_author']).' '.get_the_author_meta('last_name', $recent_posts[$i]['post_author']);
     }
@@ -101,6 +102,8 @@
         </script>
         <!--JS - NEWS-->
         <script>
+        console.log('<?php echo json_encode($recent_posts); ?>');
+
             var recent_posts = JSON.parse('<?php echo json_encode($recent_posts); ?>');
 
             function showPost(postnumber) {
@@ -108,7 +111,7 @@
                 $('.news .author').fadeOut(150);
 
                 setTimeout(function() {
-                    $('.news article').text(recent_posts[postnumber]['post_content']);
+                    $('.news article').html(recent_posts[postnumber]['post_content']);
                     $('.news article').fadeIn(150);
 
                     $('.news .author').text(recent_posts[postnumber]['author']);
