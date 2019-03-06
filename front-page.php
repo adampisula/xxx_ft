@@ -61,7 +61,7 @@
                 <a href="<?php echo get_home_url(); ?>/index.php/aktualnosci/" data-anchor="/ aktualności /">/ ak /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/programme/" data-anchor="/ harmonogram /">/ ha /</a>
                 <a href="<?php echo get_home_url(); ?>/index.php/o-festiwalu/" data-anchor="/ o festiwalu /">/ of /</a>
-                <a href="<?php echo get_home_url(); ?>/index.php/sponsorzy/" data-anchor="/ sponsorzy /">/ sp /</a>
+                <!--<a href="<?php echo get_home_url(); ?>/index.php/sponsorzy/" data-anchor="/ sponsorzy /">/ sp /</a>-->
                 <a href="<?php echo get_home_url(); ?>/index.php/kontakt/" data-anchor="/ kontakt /">/ ko /</a>
             </nav>
         </header>
@@ -82,7 +82,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/zawijas.svg" class="curl">
             <p class="title">Co nowego...</p>
             <article></article>
-            <p class="author"></p>
+            <!--<p class="author"></p>-->
             <div class="dots"></div>
         </section>
         <section class="about">
@@ -119,17 +119,17 @@
                     $('.news article').html(recent_posts[postnumber]['post_content']);
                     $('.news article').fadeIn(150);
 
-                    $('.news .author').text(recent_posts[postnumber]['author']);
-                    $('.news .author').fadeIn(150);
+                    //$('.news .author').text(recent_posts[postnumber]['author']);
+                    //$('.news .author').fadeIn(150);
 
-                    while($('.news article').height() >= 343) {
+                    while($('.news article').height() >= 393) {
                         var words = $('.news article').text().split(' ');
                         words.pop();
 
                         $('.news article').text(Array.prototype.join.call(words, ' ') + '...');
                     }
 
-                    $('.news .author').css('top', 73 + $('.news article').height() + 18 + 'px');
+                    //$('.news .author').css('top', 73 + $('.news article').height() + 18 + 'px');
                 }, 150);
 
                 $('.news .dots .dot').each(function() {
